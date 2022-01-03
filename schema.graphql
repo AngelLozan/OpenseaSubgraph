@@ -57,3 +57,4 @@ type OwnershipTransferred @entity {
   previousOwner: Bytes! # address
   newOwner: Bytes! # address
 }
+

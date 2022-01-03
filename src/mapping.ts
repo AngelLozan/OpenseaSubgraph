@@ -4,7 +4,9 @@ import {
   OrderCancelled as OrderCancelledEvent,
   OrdersMatched as OrdersMatchedEvent,
   OwnershipRenounced as OwnershipRenouncedEvent,
-  OwnershipTransferred as OwnershipTransferredEvent
+  OwnershipTransferred as OwnershipTransferredEvent,
+  WyvernExchange as TokenContract,
+
 } from "../generated/WyvernExchange/WyvernExchange"
 import {
   OrderApprovedPartOne,
@@ -98,3 +100,5 @@ export function handleOwnershipTransferred(
   entity.newOwner = event.params.newOwner
   entity.save()
 }
+
+
